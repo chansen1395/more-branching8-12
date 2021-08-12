@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Celebrity Quiz</title>
+  </head>
+
+  <body>
+    <h2>What Celebrity are you?</h2>
+    <h4>Take this quiz to find out!</h4>
+
+    <div class="container">
+      <form id="formRadio1">
+        <h2>Question 1: What is your favorite color?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer1" value="kermit" required />
+            Green!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer1" value="mspiggy" />
+            Pink!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer1" value="chef" />
+            Bork! Bork! Bork!
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+
+      <form id="formRadio2">
+        <h2>Question 2: What is your favorite food?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer2" value="kermit" required />
+            Flies!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer2" value="mspiggy" />
+            A trough of slop!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer2" value="chef" />
+            Swedish Meatballs! Bork!
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+
+      <form id="formRadio3">
+        <h2>Question 3: Where would you like to live?</h2>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer3" value="kermit" required />
+            A swamp!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer3" value="mspiggy" />
+            A sty!
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="answer3" value="chef" />
+            Borky-bork!
+          </label>
+        </div>
+        <button type="submit" class="btn btn-warning">Calculate!</button>
+      </form>
+      <div id="showResult">
+        <h1>You are:</h1>
+        <div id="kermitResult">
+          <h1>Kermit</h1>
+        </div>
+
+        <div id="mspiggyResult">
+          <h1>Miss Piggy</h1>
+        </div>
+
+        <div id="chefResult">
+          <h1>The Swedish Chef</h1>
+        </div>
+      </div>
+
+      <!-- Intentionally outside of the showResult dialog -->
+      <!-- Hides the showResult div in the js to prevent awkward dialog -->
+      <div id="noResult">
+        <h1>You can't make up your mind!</h1>
+      </div>
+
+    </div>
+  </body>
+</html>

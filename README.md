@@ -17,10 +17,10 @@ _{This webpage has been created to learn and explore the different basic feature
 
 ## Setup/Installation Requirements
 
-- _To clone and run from [GitHub Repo](https://github.com/chansen1395/portfolio-landing-page):_
+- _To clone and run from [GitHub Repo](https://github.com/chansen1395/more-branching8-12):_
 
   - _In bash at a folder of your choice, type the following:_
-    - $ git clone https://github.com/chansen1395/portfolio-landing-page
+    - $ git clone https://github.com/chansen1395/more-branching8-12
     - $ code .
   - _Use a program such as VSCode to view and run the program._
 
@@ -40,5 +40,5 @@ _{Let me know if you run into any issues or have questions, ideas or concerns. I
 ## Contact Information
 
 - _{<chansen13@georgefox.edu>}_
-- _{[GitHub Repo - gh-pages branch](https://github.com/chansen1395/portfolio-landing-page/tree/gh-pages)}_
+- _{[GitHub Repo - gh-pages branch](https://github.com/chansen1395/more-branching8-12)}_
 - _{[Active gh-pages link](https://chansen1395.github.io/portfolio-landing-page/)}_
