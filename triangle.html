@@ -18,17 +18,17 @@
       <h2>Enter three sides of a triangle</h2>
       <!-- <div class="radio"> -->
         <label>
-          <input id = "sideA" type="number" required />
+          <input id = "sideA" type="number" min = "0.000001" required/>
           Side 1 length:
         </label>
         <br>
         <label>
-          <input id ="sideB" type="number" required />
+          <input id ="sideB" type="number" min = "0.000001" required />
           Side 2 length:
         </label>
         <br>
         <label>
-          <input id = "sideC" type="number" required />
+          <input id = "sideC" type="number" min = "0.000001" required />
           Side 3 length:
         </label>
         <br>
@@ -38,20 +38,20 @@
 
     <div id="showResult">
       <h1>You are:</h1>
-      <div id="kermitResult">
+      <div id="equTri">
         <div class="card-smaller">
           <h1 class="card-header">Kermit</h1>
           <img class="img card-body" src="img/Kermit_the_Frog.jpg" />
         </div>
       </div>
-      <div id="mspiggyResult">
+      <div id="isoTri">
         <div class="card-smaller">
           <h1 class="card-header">Miss Piggy</h1>
           <img class="img card-body" src="img/mspiggy.jpg" />
         </div>
       </div>
 
-      <div id="chefResult">
+      <div id="scaTri">
         <div class="card-smaller">
           <h1 class="card-header">Swedish Chef</h1>
           <img class="img card-body" src="img/The_Swedish_Chef.jpg" />
@@ -60,7 +60,7 @@
 
       <!-- Intentionally outside of the showResult dialog -->
       <!-- Hides the showResult div in the js to prevent awkward dialog -->
-    <div id="noResult">
+    <div id="notTri">
       <h1>You can't make up your mind!</h1>
       <img class="img" src="img/noresult.jpg" />
     </div>
