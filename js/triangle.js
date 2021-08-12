@@ -1,14 +1,14 @@
 $(document).ready(function () {
-  var kermit = 0;
-  var mspiggy = 0;
-  var chef = 0;
 
-  $("#formRadio1").submit(function (event) {
+  $("#formTriangle").submit(function (event) {
     event.preventDefault();
-    $("#cow").hide();
-    $("#snake").hide();
-    $("#werewolf").hide();
-    const celeb = $("input:radio[name=answer1]:checked").val();
+    var sideA = parseFloat($("input#sideA").val());
+    var sideB = parseFloat($("input#sideB").val());
+    var sideC = parseFloat($("input#sideC").val());
+    alert(sideA);
+    alert(sideB);
+    alert(sideC);
+
     if (celeb === "kermit") {
       $("#formRadio1").hide();
       $("#formRadio2").show();
