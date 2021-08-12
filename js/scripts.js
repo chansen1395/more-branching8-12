@@ -10,17 +10,17 @@ $(document).ready(function () {
     $("#werewolf").hide();
     const celeb = $("input:radio[name=answer1]:checked").val();
     if (celeb === "kermit") {
-        $("#formRadio1").hide();
-        $("#formRadio2").show();
-        return kermit++;
+      $("#formRadio1").hide();
+      $("#formRadio2").show();
+      return kermit++;
     } else if (celeb === "mspiggy") {
-        $("#formRadio1").hide();
-        $("#formRadio2").show();
-        return mspiggy++;
+      $("#formRadio1").hide();
+      $("#formRadio2").show();
+      return mspiggy++;
     } else if (celeb === "chef") {
-        $("#formRadio1").hide();
-        $("#formRadio2").show();
-        return chef++;
+      $("#formRadio1").hide();
+      $("#formRadio2").show();
+      return chef++;
     } else {
     }
   });
@@ -29,17 +29,17 @@ $(document).ready(function () {
     event.preventDefault();
     const food = $("input:radio[name=answer2]:checked").val();
     if (food === "kermit") {
-        $("#formRadio2").hide();
-        $("#formRadio3").show();
-        return kermit++;
+      $("#formRadio2").hide();
+      $("#formRadio3").show();
+      return kermit++;
     } else if (food === "mspiggy") {
-        $("#formRadio2").hide();
-        $("#formRadio3").show();
-        return mspiggy++;
+      $("#formRadio2").hide();
+      $("#formRadio3").show();
+      return mspiggy++;
     } else if (food === "chef") {
-        $("#formRadio2").hide();
-        $("#formRadio3").show();
-        return chef++;
+      $("#formRadio2").hide();
+      $("#formRadio3").show();
+      return chef++;
     } else {
     }
   });
@@ -54,20 +54,20 @@ $(document).ready(function () {
       // alert(kermit);
       // alert(mspiggy);
       // alert(chef);
-        
+
     } else if (home === "mspiggy") {
-        mspiggy ++;  
-        $("#formRadio3").hide();
-        // alert(kermit);
-        // alert(mspiggy);
-        // alert(chef);
+      mspiggy++;
+      $("#formRadio3").hide();
+      // alert(kermit);
+      // alert(mspiggy);
+      // alert(chef);
     } else if (home === "chef") {
-        chef++;
-        $("#formRadio3").hide();
-        // Test whether scores are being tabulated
-        // alert(kermit);
-        // alert(mspiggy);
-        // alert(chef);   
+      chef++;
+      $("#formRadio3").hide();
+      // Test whether scores are being tabulated
+      // alert(kermit);
+      // alert(mspiggy);
+      // alert(chef);   
     } else {
     }
     // Calculate and show Results
@@ -77,15 +77,22 @@ $(document).ready(function () {
       $("#kermitResult").show();
     } else if (mspiggy >= 2) {
       // alert("testpig");
-        $("#mspiggyResult").show();
+      $("#mspiggyResult").show();
     } else if (chef >= 2) {
       // alert("testchef");
-        $("#chefResult").show();
+      $("#chefResult").show();
     } else {
-      $("#showResult").hide();
+      // $("#showResult").hide();
       $("#noResult").show()
       // alert("testno");
     }
-  });
+
+    // adds a reset button at the end of the quiz.
+    $("#btnReset").click(function () {
+      location.reload();
+    });
+
+});
+
 
 });
